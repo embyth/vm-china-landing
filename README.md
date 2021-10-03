@@ -1,19 +1,10 @@
-# :rocket: Basic Gulp Web Project Boilerplate
+# :cn: V&M China Landing
 
 [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-Boilerplate is intended to begin project using CSS preprocessor SASS and task manager Gulp.
+Лендинг-страница для компании V&M China, которая занимается доставкой товара и грузов из Китая
 
-Author: [Rostyslav Miniukov](https://github.com/embyth/)
-
----
-
-## Installation
-
-```bash
-git clone git@github.com:embyth/startup-gulp-template.git project-name
-cd project-name
-```
+Автор: [Rostyslav Miniukov](https://github.com/embyth/)
 
 ---
 
@@ -101,7 +92,7 @@ If you just downloaded the project without the `node_modules` dependencies and y
 npm install
 ```
 
-[travis-image]: https://travis-ci.org/embyth/startup-gulp-template.svg?branch=master
-[travis-url]: https://travis-ci.org/embyth/startup-gulp-template
-[dependency-image]: https://david-dm.org/embyth/startup-gulp-template/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/embyth/startup-gulp-template?type=dev
+[travis-image]: https://travis-ci.org/embyth/vm-china-landing.svg?branch=master
+[travis-url]: https://travis-ci.org/embyth/vm-china-landing
+[dependency-image]: https://david-dm.org/embyth/vm-china-landing/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/embyth/vm-china-landing?type=dev

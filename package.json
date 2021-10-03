@@ -1,7 +1,7 @@
 {
-  "name": "startup-gulp-template",
-  "version": "1.4.1",
-  "description": "Lightweight startup Gulp with SASS template for web project",
+  "name": "vm-china-landing",
+  "version": "1.0.0",
+  "description": "Лендинг-страница для компании V&M China, которая занимается доставкой товара и грузов из Китая",
   "private": true,
   "type": "module",
   "scripts": {
@@ -20,9 +20,12 @@
   "author": "Rostyslav Miniukov <miniukovrostyslav@gmail.com> (https://github.com/embyth)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/embyth/startup-gulp-template/issues"
+    "url": "https://github.com/embyth/vm-china-landing/issues"
   },
-  "homepage": "https://github.com/embyth/startup-gulp-template#readme",
+  "engines": {
+    "node": "16.8.0"
+  },
+  "homepage": "https://github.com/embyth/vm-china-landing#readme",
   "devDependencies": {
     "@babel/core": "7.15.5",
     "@babel/preset-env": "7.15.4",
