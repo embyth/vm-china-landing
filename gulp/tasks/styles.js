@@ -21,7 +21,7 @@ export const styles = () => {
   const sassOptions = {
     outputStyle: 'expanded',
     sourceComments: true,
-    includePaths: [source.styles]
+    includePaths: [source.styles, 'node_modules']
   };
   const postCssPlugins = [autoprefixer()];
   const cssoOptions = {

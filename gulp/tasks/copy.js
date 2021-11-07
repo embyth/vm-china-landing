@@ -7,8 +7,10 @@ const {src, dest} = pkg;
 export const copy = (done) => {
   src(vendor.styles)
     .pipe(dest(`${destination.styles}libs/`));
-  src(`${source.root}*.ico`)
-    .pipe(dest(destination.root));
+  src(`${source.images.all}**/*.ico`)
+    .pipe(dest(destination.images.all));
+  src(`${source.images.all}**/*.gif`)
+    .pipe(dest(destination.images.all));
 
   done();
 }
