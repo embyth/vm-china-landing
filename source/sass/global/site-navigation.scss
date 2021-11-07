@@ -1,0 +1,193 @@
+.site-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 10px 0;
+
+  @media ($desktop) {
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.site-nav__logo-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+
+  @media ($tablet) {
+    left: 40px;
+  }
+
+  @media ($desktop) {
+    position: static;
+  }
+}
+
+.site-nav__logo {
+  display: block;
+  width: 22px;
+  height: 30px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    transition: none;
+    opacity: 0.3;
+  }
+
+  @media ($tablet) {
+    width: 144px;
+    height: 30px;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+.site-nav__request-call {
+  @media ($tablet) {
+    margin-left: auto;
+    padding-right: 60px;
+  }
+
+  @media ($desktop) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.site-nav__request-call-button {
+  border: 1px solid $white;
+  transition: color 0.3s ease, background 0.3s ease, border 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    border: 1px solid $orange;
+    color: $orange;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-nav__toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  line-height: 0;
+
+  @media ($tablet) {
+    right: 40px;
+  }
+
+  @media ($desktop) {
+    display: none;
+  }
+}
+
+.site-nav__list {
+  @include list-reset;
+
+  order: 4;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  flex-basis: 100%;
+  padding-top: 30px;
+
+  &--closed {
+    display: none;
+  }
+
+  @media ($desktop) {
+    justify-content: center;
+    flex-flow: row wrap;
+    flex-basis: 60%;
+    order: 0;
+    padding: 0;
+
+    &--closed {
+      display: flex;
+    }
+  }
+}
+
+.site-nav__item {
+  border-bottom: 1px solid rgba($orange, 0.1);
+  text-align: center;
+
+  @media ($desktop) {
+    margin: 0;
+    border: none;
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+}
+
+.site-nav__item-link {
+  display: block;
+  position: relative;
+  font-family: ff(roboto);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: fw(medium);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $blue;
+  padding: 22px 0;
+  flex-basis: 100%;
+
+  &:hover,
+  &:focus {
+    color: darken($orange, 5%);
+  }
+
+  &:active {
+    color: rgba($orange, 0.3);
+    transition: none;
+  }
+
+  @media ($tablet) {
+    color: $blue;
+    transition: color 0.3s ease-in-out;
+  }
+
+  @media ($desktop) {
+    font-size: 14px;
+    line-height: 18px;
+    color: $blue;
+    padding: 17px 15px 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: $blue;
+      transition: width 0.3s ease;
+    }
+
+    &:hover,
+    &:focus {
+      color: $blue;
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

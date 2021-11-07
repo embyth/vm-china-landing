@@ -1,0 +1,18 @@
+.main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: $white;
+
+  &--opened {
+    height: 100vh;
+  }
+
+  @media ($desktop) {
+    &--opened {
+      height: auto;
+    }
+  }
+}

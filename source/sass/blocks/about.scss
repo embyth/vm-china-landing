@@ -1,0 +1,97 @@
+.about {
+  padding: 50px 0;
+}
+
+.about__content {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about__left,
+.about__right {
+  width: 48%;
+}
+
+.about__image-border {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed $black;
+    z-index: -1;
+  }
+}
+
+.about__list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+
+  > li {
+    background: $white;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+      0 0.5rem 1.13rem rgba(75, 0, 0, 0.05);
+    counter-increment: gradient-counter;
+    margin-top: 1rem;
+    min-height: 3rem;
+    padding: 1rem 1rem 1rem 3rem;
+    position: relative;
+    font-family: ff(roboto);
+    font-weight: fw(regular);
+    font-size: 16px;
+    line-height: 26px;
+    color: $black;
+
+    &::before,
+    &::after {
+      background: linear-gradient(135deg, $white 0%, $orange 100%);
+      border-radius: 1rem 1rem 0 1rem;
+      content: "";
+      height: 3rem;
+      left: -1rem;
+      overflow: hidden;
+      position: absolute;
+      top: -1rem;
+      width: 3rem;
+    }
+
+    &::before {
+      align-items: flex-end;
+      box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+        0 0.5rem 1.13rem rgba(75, 0, 0, 0.05);
+      content: counter(gradient-counter);
+      color: $black;
+      display: flex;
+      font: 900 1.5em/1 ff(roboto);
+      justify-content: flex-end;
+      padding: 0.13em 0.25em;
+      z-index: 1;
+    }
+
+    @for $i from 1 through 5 { // stylelint-disable-line
+      &:nth-child(10n+#{$i}):before {
+        background: linear-gradient(135deg, rgba($orange, $i * 0.2) 0%, rgba($white, $i * 0.2) 100%);
+      }
+    }
+
+    + li {
+      margin-top: 2rem;
+    }
+  }
+}

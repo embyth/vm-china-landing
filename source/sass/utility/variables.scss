@@ -1,57 +1,47 @@
 // Media BreakPoints
 $mobile-width: 320px;
-$mobile-l-width: 425px;
 $tablet-width: 768px;
-$desktop-width: 1150px;
-
-$mobile-l-max-width: ($tablet-width - 1);
+$desktop-width: 1170px;
 
 $retina-dpi: 144dpi;
 
 $mobile: "min-width: #{$mobile-width}";
-$mobile-l: "min-width: #{$mobile-l-width}";
 $tablet: "min-width: #{$tablet-width}";
 $desktop: "min-width: #{$desktop-width}";
-
-$mobile-l-only: "min-width: #{$mobile-l-width}) and (max-width: #{$mobile-l-max-width}";
 
 $retina: "min-resolution: #{$retina-dpi}";
 
 // Padding Variables
 $paddings: (
-  container-m: 0 30px,
-  container-t: 0 50px,
-  container-d: 0 50px,
+  container-m: 0 20px,
+  container-t: 0 40px,
+  container-d: 0 30px,
 );
 
 // Font Variables
 $font-stack: (
-  opensans: ("Open Sans", "Tahoma", "Arial", sans-serif),
+  playfair: ("Playfair Display", "Times", "Georgia", "Times New Roman", "Palatino", serif),
+  roboto: ("Roboto", "Helvetica", "Arial", sans-serif),
 );
 
 $font-weights: (
+  light: 300,
   normal: 400,
   regular: 400,
+  medium: 500,
+  bold: 700,
 );
-
-$line-height-base: 24px;
 
 $font-line-height: (
-  base: $line-height-base,
+  base: 30px,
 );
 
-$font-size-base: 15px;
-
 $font-sizes: (
-  base: $font-size-base,
+  base: 16px,
 );
 
 // Color Variables
-$black: #000000;
-$white: #ffffff;
-
-$bg-color-body: $white;
-
-$border-color-button: $black;
-
-$font-color-base: $black;
+$black: #18191f;
+$white: #fef8f5;
+$orange: #f26641;
+$blue: #0f264c;

@@ -14,4 +14,13 @@
     padding: padding(container-d);
     max-width: $desktop-width;
   }
+
+  &--desktop {
+    @media ($desktop) {
+      margin: 0 auto;
+      width: auto;
+      padding: padding(container-d);
+      max-width: $desktop-width;
+    }
+  }
 }

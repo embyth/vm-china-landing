@@ -1,0 +1,290 @@
+/*==================================
+    TIMELINE
+==================================*/
+
+/*-- GENERAL STYLES
+    ------------------------------*/
+
+.workflow {
+  @media ($desktop) {
+    padding: 40px 0;
+  }
+}
+
+.timeline {
+  line-height: 1.4em;
+  list-style: none;
+  margin: 0;
+  padding: 30px 0;
+  width: 100%;
+}
+
+/*----- TIMELINE ITEM -----*/
+
+.timeline-item {
+  padding-left: 40px;
+  padding-bottom: 20px;
+  position: relative;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+/*----- TIMELINE INFO -----*/
+
+.timeline-info {
+  background-repeat: no-repeat;
+
+  &--manager {
+    background-image: url("../img/timeline/manager.svg");
+    background-size: 61px 90px;
+    height: 90px;
+  }
+
+  &--contract {
+    background-image: url("../img/timeline/contract.svg");
+    background-size: 69px 90px;
+    height: 90px;
+  }
+
+  &--container {
+    background-image: url("../img/timeline/container.svg");
+    background-size: 80px 71px;
+    height: 71px;
+  }
+
+  &--customs {
+    background-image: url("../img/timeline/customs.svg");
+    background-size: 85px 69px;
+    height: 69px;
+  }
+
+  &--ship {
+    background-image: url("../img/timeline/ship.svg");
+    background-size: 114px 60px;
+    height: 60px;
+  }
+
+  &--endpoint {
+    background-image: url("../img/timeline/delivery.svg");
+    background-size: 70px 94px;
+    height: 94px;
+  }
+}
+
+.timeline-title {
+  font-family: ff(roboto);
+  font-weight: fw(bold);
+  font-size: 18px;
+  line-height: 28px;
+  color: $black;
+  margin: 25px 0 15px;
+}
+/*----- TIMELINE MARKER -----*/
+
+.timeline-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+
+  &::before {
+    background: $orange;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 15px;
+    transition: background 0.3s ease-in-out,
+      border 0.3s ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    width: 3px;
+    background: #ccd5db;
+    display: block;
+    position: absolute;
+    top: 24px;
+    bottom: 0;
+    left: 6px;
+  }
+
+  .timeline-item:last-child &::after {
+    content: none;
+  }
+}
+
+.timeline-item:not(.period):hover .timeline-marker::before {
+  background: transparent;
+  border: 3px solid $orange;
+}
+
+/*----- TIMELINE CONTENT -----*/
+
+.timeline-content {
+  padding-bottom: 40px;
+
+  p {
+    font-family: ff(roboto);
+    font-weight: fw(light);
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    margin: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/*----------------------------------------------
+        MOD: TIMELINE CENTERED
+    ----------------------------------------------*/
+
+.timeline-centered {
+  @media ($tablet) {
+    .timeline {
+      display: table;
+    }
+
+    .timeline-item {
+      display: table-row;
+      padding: 0;
+    }
+
+    .timeline-info,
+    .timeline-marker,
+    .timeline-content,
+    .period .timeline-info {
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    .timeline-marker {
+      position: relative;
+    }
+
+    .timeline-content {
+      padding-left: 30px;
+      padding-bottom: 60px;
+    }
+
+    .timeline-info {
+      padding-right: 115px;
+      background-position: top center;
+    }
+
+    .timeline-title {
+      margin: 0;
+    }
+
+    .period .timeline-title {
+      position: relative;
+      left: -45px;
+    }
+  }
+
+  @media ($desktop) {
+    &,
+    .timeline-item,
+    .timeline-info,
+    .timeline-marker,
+    .timeline-content {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    .timeline-item {
+      padding-bottom: 60px;
+      overflow: hidden;
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: 50%;
+      margin-left: -7.5px;
+    }
+
+    .timeline-info,
+    .timeline-content {
+      width: 50%;
+    }
+
+    .timeline-title {
+      margin: 0 0 20px;
+    }
+
+    > .timeline-item:nth-child(odd) .timeline-info {
+      float: left;
+      text-align: right;
+      padding-right: 30px;
+      background-position: right 30px center;
+    }
+
+    > .timeline-item:nth-child(odd) .timeline-content {
+      float: right;
+      text-align: left;
+      padding-left: 30px;
+    }
+
+    > .timeline-item:nth-child(even) .timeline-info {
+      float: right;
+      text-align: left;
+      padding-left: 30px;
+      background-position: left 30px center;
+    }
+
+    > .timeline-item:nth-child(even) .timeline-content {
+      float: left;
+      text-align: right;
+      padding-right: 30px;
+    }
+
+    > .timeline-item.period .timeline-content {
+      float: none;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .timeline-item.period {
+      padding: 50px 0 90px;
+    }
+
+    .period .timeline-marker::after {
+      height: 30px;
+      bottom: 0;
+      top: auto;
+    }
+
+    .period .timeline-title {
+      left: auto;
+    }
+  }
+}
+
+/*----------------------------------------------
+        MOD: MARKER OUTLINE
+    ----------------------------------------------*/
+
+.marker-outline {
+  .timeline-marker {
+    &::before {
+      background: transparent;
+      border-color: $orange;
+    }
+  }
+
+  .timeline-item:hover .timeline-marker::before {
+    background: $orange;
+  }
+}

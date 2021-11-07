@@ -1,0 +1,69 @@
+.socials__list {
+  @include list-reset;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 20px;
+  min-width: 150px;
+
+  @media ($tablet) {
+    max-width: 200px;
+    margin-left: auto;
+  }
+}
+
+.socials__item {
+  font-size: 0;
+  line-height: 0;
+}
+
+.socials__link {
+  display: inline-block;
+  padding: 5px;
+
+  .socials__svg {
+    transition: all 0.3s ease-out;
+  }
+
+  &:hover,
+  &:focus {
+    .socials__svg {
+      fill: rgba($blue, 0.6);
+    }
+  }
+
+  &:active {
+    .socials__svg {
+      transition: none;
+      fill: rgba($blue, 0.3);
+    }
+  }
+}
+
+.socials__svg {
+  fill: $blue;
+
+  @media ($tablet) {
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--vk {
+      width: 29px;
+      height: 18px;
+    }
+
+    &--fb {
+      width: 15px;
+      height: 23px;
+    }
+
+    &--yt {
+      width: 25px;
+      height: 19px;
+    }
+  }
+}

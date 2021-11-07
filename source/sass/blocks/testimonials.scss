@@ -1,0 +1,134 @@
+.testimonials {
+  padding: 60px 0;
+
+  .section-header {
+    margin-bottom: 20px;
+  }
+
+  @media ($tablet) {
+    padding: 70px 0;
+  }
+
+  @media ($desktop) {
+    padding: 80px 0;
+  }
+}
+
+.testimonials__navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.testimonials__prev,
+.testimonials__next {
+  background: none;
+  border: none;
+  appearance: none;
+  padding: 5px;
+  font-size: 0;
+  line-height: 0;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 60%;
+  }
+
+  &:active {
+    transition: none;
+    opacity: 30%;
+  }
+}
+
+.testimonials__prev {
+  transform: rotate(180deg);
+  margin: 0;
+}
+
+.testimonials__svg {
+  fill: $orange;
+}
+
+.testimonials__wrapper {
+  padding: 0 20px !important; // stylelint-disable-line
+}
+
+.testimonials__list {
+  @include list-reset;
+
+  padding: 20px 0;
+  user-select: none;
+}
+
+.testimonials__item {
+  position: relative;
+  padding: 40px 25px;
+  box-sizing: border-box;
+  box-shadow: 0 7px 10px 0 rgba($blue, 20%);
+  border-radius: 8px;
+  border-color: transparent;
+  background: $white;
+  text-decoration: none;
+  color: $black;
+  display: block;
+  transition: 0.25s ease;
+}
+
+.testimonials__text {
+  font-family: ff(roboto);
+  font-weight: fw(light);
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonials__source {
+  font-family: ff(roboto);
+  font-weight: fw(light);
+  font-size: 12px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  color: $black;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.destimonials__footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.testimonials__avatar {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.testimonials__name {
+  font-family: ff(roboto);
+  font-weight: fw(bold);
+  font-size: 16px;
+  line-height: 28px;
+}

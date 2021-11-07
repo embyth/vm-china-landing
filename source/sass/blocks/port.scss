@@ -1,0 +1,79 @@
+.port--animation {
+  display: none;
+
+  @media ($desktop) {
+    display: block;
+    width: 750px;
+    height: 500px;
+    position: relative;
+    zoom: 0.9;
+
+    img {
+      position: absolute;
+      transition: all 1s ease;
+    }
+
+    .port-bg {
+      width: 721px;
+      height: 392px;
+      top: 37px;
+      left: 7;
+      z-index: 1;
+      opacity: 0;
+    }
+
+    .port-ship {
+      width: 450px;
+      height: 177px;
+      top: 263px;
+      left: -50px;
+      z-index: 3;
+      opacity: 0;
+    }
+
+    .port-self {
+      width: 463px;
+      height: 270px;
+      top: 158px;
+      left: 285px;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    .port-bird-1 {
+      width: 54px;
+      height: 78px;
+      top: 56px;
+      left: 656px;
+      z-index: 4;
+      opacity: 0;
+    }
+
+    .port-bird-2 {
+      width: 61px;
+      height: 48px;
+      top: 85px;
+      left: 80px;
+      z-index: 7;
+      opacity: 0;
+    }
+
+    .port-sea {
+      width: 717px;
+      height: 39px;
+      top: 435px;
+      left: 46px;
+      opacity: 0;
+      z-index: 5;
+    }
+
+    .port-buyo {
+      width: 65px;
+      height: 61px;
+      top: 439px;
+      left: 132px;
+      opacity: 0;
+      z-index: 6;
+    }
+  }
+}
