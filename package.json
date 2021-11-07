@@ -33,6 +33,7 @@
     "babel-loader": "8.2.2",
     "browser-sync": "2.27.5",
     "cross-env": "7.0.3",
+    "css-loader": "6.4.0",
     "del": "6.0.0",
     "eslint": "7.32.0",
     "eslint-config-htmlacademy": "4.0.2",
@@ -58,7 +59,10 @@
     "imagemin-jpegoptim": "7.0.0",
     "imagemin-optipng": "8.0.0",
     "imagemin-svgo": "9.0.0",
+    "resolve-url-loader": "4.0.0",
     "sass": "1.39.0",
+    "sass-loader": "12.3.0",
+    "style-loader": "3.3.0",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.10",
     "terser-webpack-plugin": "5.2.3",
@@ -67,7 +71,11 @@
     "webpack-stream": "7.0.0"
   },
   "dependencies": {
-    "normalize.css": "8.0.1"
+    "@googlemaps/js-api-loader": "1.12.5",
+    "gsap": "3.8.0",
+    "lightgallery": "2.3.0",
+    "normalize.css": "8.0.1",
+    "swiper": "7.0.8"
   },
   "husky": {
     "hooks": {

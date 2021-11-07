@@ -23,7 +23,11 @@ export default {
             presets: [`@babel/preset-env`]
           }
         }
-      }
+      },
+      {
+        test: /\.(css|scss)$/i,
+        use: ["style-loader", "css-loader", "resolve-url-loader", "sass-loader"],
+      },
     ]
   },
   optimization: {
