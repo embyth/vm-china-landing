@@ -8,7 +8,12 @@ import Calculate from "./calculate.js";
 import Contact from "./contact.js";
 import GoogleMap from "./map.js";
 
-import {setFooterYear} from "./helpers.js";
+import {setFooterYear, isWebpSupported} from "./helpers.js";
+
+isWebpSupported().then((hasWebp) => hasWebp
+  ? document.body.classList.add(`webp-support`)
+  : document.body.classList.add(`no-webp`)
+);
 
 const navigation = new Navigation();
 const hero = new Hero();
