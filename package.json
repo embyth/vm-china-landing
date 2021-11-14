@@ -59,6 +59,7 @@
     "imagemin-jpegoptim": "7.0.0",
     "imagemin-optipng": "8.0.0",
     "imagemin-svgo": "9.0.0",
+    "imask": "6.2.2",
     "sass": "1.39.0",
     "style-loader": "3.3.0",
     "stylelint": "13.13.1",
