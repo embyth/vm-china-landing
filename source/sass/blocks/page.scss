@@ -6,4 +6,51 @@
   line-height: lh(base);
   color: $black;
   background-color: $white;
+
+  // Scrollbar
+  &::-webkit-scrollbar-track {
+    background-color: $white;
+  }
+
+  &::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: $orange;
+    background-clip: content-box;
+
+    &:hover {
+      background-color: darken($orange, 5%);
+    }
+  }
+
+  // Invalid input shake
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(5px);
+    }
+  }
+
+  .shake {
+    animation: shake 0.6s;
+  }
 }

@@ -8,9 +8,13 @@
   @include list-reset;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+
+  @media ($tablet) {
+    justify-content: space-between;
+  }
 }
 
 .card {
@@ -24,7 +28,16 @@
   box-shadow: 0 7px 10px 0 rgba($blue, 20%);
   line-height: 0;
   font-size: 0;
+  margin: 0 20px;
   margin-bottom: 40px;
+
+  @media ($tablet) {
+    margin: 0 0 40px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::after {
     content: "";

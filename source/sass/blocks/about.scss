@@ -4,19 +4,52 @@
 
 .about__content {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 40px;
+
+  @media ($tablet) {
+    flex-flow: row nowrap;
+    margin-bottom: 30px;
+  }
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--reverse {
+    .about__right {
+      order: -1;
+      margin-top: 0;
+      margin-bottom: 30px;
+
+      @media ($tablet) {
+        order: 1;
+      }
+    }
   }
 }
 
 .about__left,
 .about__right {
-  width: 48%;
+  width: 100%;
+
+  @media ($tablet) {
+    width: 48%;
+    margin-top: 0;
+  }
+}
+
+.about__right {
+  margin-top: 30px;
+}
+
+.about__photo-holder {
+  padding: 0 10px 0 0;
+
+  @media ($tablet) {
+    padding: 0 20px 0 0;
+  }
 }
 
 .about__image-border {
@@ -27,12 +60,19 @@
   &::after {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     width: 100%;
     height: 100%;
     border: 2px dashed $black;
     z-index: -1;
+  }
+
+  @media ($tablet) {
+    &::after {
+      top: 20px;
+      left: 20px;
+    }
   }
 }
 

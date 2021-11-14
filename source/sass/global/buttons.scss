@@ -27,6 +27,11 @@
     opacity: 0.3;
   }
 
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
   @media ($desktop) {
     min-width: 160px;
     font-size: 16px;
