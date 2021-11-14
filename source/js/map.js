@@ -19,11 +19,11 @@ export default class GoogleMap {
     const viewport = document.documentElement.clientWidth || window.innerWidth;
     const mapCenter =
       viewport < MEDIA_BREAKPOINTS.DESKTOP
-      && viewport > MEDIA_BREAKPOINTS.MOBILE
+      && viewport >= MEDIA_BREAKPOINTS.TABLET
         ? {lat: 23.176144, lng: 113.23830}
         : {lat: 23.176144, lng: 113.236920};
     const markerCenter =
-      viewport < 768
+      viewport <= MEDIA_BREAKPOINTS.TABLET
         ? {lat: 23.176144, lng: 113.236920}
         : {lat: 23.176144, lng: 113.236920};
 
