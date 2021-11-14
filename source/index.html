@@ -60,7 +60,7 @@
           </li>
         </ul>
         <div class="site-nav__request-call">
-          <button class="site-nav__request-call-button button" type="button">Связатся</button>
+          <button class="site-nav__request-call-button button" type="button">Связаться</button>
         </div>
         <button class="site-nav__toggle hamburger hamburger--squeeze" type="button" aria-label="Открыть меню">
           <span class="hamburger-box">
@@ -84,8 +84,11 @@
             Доставка грузов и товаров из Китая
           </h2>
           <p class="hero__text level-negative-1">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda dolore incidunt perspiciatis explicabo,
-            tenetur fugiat hic consectetur, sed ratione voluptatum, et eligendi aliquid at laborum?
+            Оперативная доставка из Китая в Россию "под ключ". Предоставляем услуги по построению бизнеса с Китаем более
+            5 лет. Наши
+            клиенты как большие успешные предприятия, так и частные лица, которым мы помогли оформить и доставить грузы
+            любых
+            габаритов.
           </p>
           <a href="#calculate" class="hero__button button">
             Рассчитать
@@ -268,10 +271,11 @@
 
       <ul class="delivery__list">
         <li class="delivery__item">
-          <div class="delivery__card delivery__card--express">
+          <div class="delivery__card delivery__card--combine">
             <div class="delivery__card-content">
-              <h3 class="delivery__card-title">Экспресс</h3>
-              <p class="delivery__card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, perferendis!
+              <h3 class="delivery__card-title">Авиа + Авто</h3>
+              <p class="delivery__card-text">
+                13-15 дней с момента оформления
               </p>
             </div>
           </div>
@@ -280,16 +284,18 @@
           <div class="delivery__card delivery__card--air">
             <div class="delivery__card-content">
               <h3 class="delivery__card-title">Авиа</h3>
-              <p class="delivery__card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, perferendis!
+              <p class="delivery__card-text">
+                8-12 дней с момента отправки, минимальный вес - 5 кг
               </p>
             </div>
           </div>
         </li>
         <li class="delivery__item">
-          <div class="delivery__card delivery__card--sea">
+          <div class="delivery__card delivery__card--express">
             <div class="delivery__card-content">
-              <h3 class="delivery__card-title">Морем</h3>
-              <p class="delivery__card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, perferendis!
+              <h3 class="delivery__card-title">Экспресс</h3>
+              <p class="delivery__card-text">
+                1-4 дня с момента отправки, минимальный вес - 500г
               </p>
             </div>
           </div>
@@ -298,23 +304,23 @@
           <div class="delivery__card delivery__card--auto">
             <div class="delivery__card-content">
               <h3 class="delivery__card-title">Авто</h3>
-              <p class="delivery__card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, perferendis!
+              <p class="delivery__card-text">
+                до 14 дней с прохождением таможни
               </p>
             </div>
           </div>
         </li>
         <li class="delivery__item">
-          <div class="delivery__card delivery__card--combine">
+          <div class="delivery__card delivery__card--sea">
             <div class="delivery__card-content">
-              <h3 class="delivery__card-title">Авиа + Авто</h3>
-              <p class="delivery__card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, perferendis!
+              <h3 class="delivery__card-title">Морем</h3>
+              <p class="delivery__card-text">
+                от 30 дней
               </p>
             </div>
           </div>
         </li>
-        <li class="delivery__item">
-
-        </li>
+        <li class="delivery__item"></li>
       </ul>
     </div>
 
@@ -359,7 +365,7 @@
         <ul class="testimonials__list swiper-wrapper">
           <li class="testimonials__item swiper-slide">
             <article class="testimonials__article">
-              <p class="testimonials__text">Весь груз получил, вроде все в порядке. Спасибо Вам и вашей компании за
+              <p class="testimonials__text">Весь груз получил, все в порядке. Спасибо Вам и вашей компании за
                 помощь в доставке нашего груза.&nbsp;<button class="testimonials__source" type="button"
                   data-src="0">[источник]</button></p>
               <footer class="destimonials__footer">
@@ -568,13 +574,13 @@
               <div class="calc__form-item">
                 <label class="calc__form-label">
                   <input id="calc-weight" name="calc-weight" type="number" placeholder="Вес (в кг)"
-                    class="calc__form-input input" required>
+                    class="calc__form-input input">
                 </label>
               </div>
               <div class="calc__form-item">
                 <label class="calc__form-label">
                   <input id="calc-volume" name="calc-volume" type="number" placeholder="Объём (м куб)"
-                    class="calc__form-input input" required>
+                    class="calc__form-input input">
                 </label>
               </div>
             </div>
@@ -598,13 +604,14 @@
               <div class="calc__form-item">
                 <label class="calc__form-label">
                   <input id="calc-user-phone" name="calc-user-phone" type="tel" placeholder="Телефон"
-                    class="calc__form-input input" required>
+                    class="calc__form-input input" required
+                    pattern="^(\+7|7|8)?[\s\-]?\(?[0123456789][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$">
                 </label>
               </div>
               <div class="calc__form-item">
                 <label class="calc__form-label">
                   <input id="calc-user-email" name="calc-user-email" type="email" placeholder="E-Mail"
-                    class="calc__form-input input" required>
+                    class="calc__form-input input">
                 </label>
               </div>
               <div class="calc__form-item">
@@ -639,45 +646,54 @@
       </div>
 
       <div class="products__content">
-        <div class="products_card">
+        <div class="products__card">
           <picture>
             <source type="image/webp" srcset="img/content/products/car-parts.webp">
             <img class="partners__image" src="img/content/products/car-parts.png"
               alt="Новые автозапчасти разложены на красивом фоне" width="920" height="600">
           </picture>
-          <h3 class="products_card-title">Мото- вело- автозапчасти</h3>
+          <h3 class="products__card-title">
+            <span class="products__card-title--mobile">Автозапчасти</span>
+            <span class="products__card-title--not-mobile">Мото- вело- автозапчасти</span>
+          </h3>
         </div>
-        <div class="products_card">
+        <div class="products__card">
           <picture>
             <source type="image/webp" srcset="img/content/products/clothings.webp">
             <img class="partners__image" src="img/content/products/clothings.jpg" alt="Сложенная одежда на полке"
               width="1920" height="1280">
           </picture>
-          <h3 class="products_card-title">Одежда</h3>
+          <h3 class="products__card-title">Одежда</h3>
         </div>
-        <div class="products_card">
+        <div class="products__card">
           <picture>
             <source type="image/webp" srcset="img/content/products/pc-supplies.webp">
             <img class="partners__image" src="img/content/products/pc-supplies.jpg" alt="Микросхемы внутри компьютера"
               width="1680" height="1152">
           </picture>
-          <h3 class="products_card-title">Компьютерные, мобильные комплектующие и аксессуары</h3>
+          <h3 class="products__card-title">
+            <span class="products__card-title--mobile">Компьютерные аксессуары</span>
+            <span class="products__card-title--not-mobile">Компьютерные, мобильные комплектующие и аксессуары</span>
+          </h3>
         </div>
-        <div class="products_card">
+        <div class="products__card">
           <picture>
             <source type="image/webp" srcset="img/content/products/cigarettes.webp">
             <img class="partners__image" src="img/content/products/cigarettes.jpg" alt="Линейка электронных сиграет"
               width="1920" height="1280">
           </picture>
-          <h3 class="products_card-title">Электронные одноразовые сигареты</h3>
+          <h3 class="products__card-title">
+            <span class="products__card-title--mobile">Электронные сигареты</span>
+            <span class="products__card-title--not-mobile">Электронные одноразовые сигареты</span>
+          </h3>
         </div>
-        <div class="products_card">
+        <div class="products__card">
           <picture>
             <source type="image/webp" srcset="img/content/products/household.webp">
             <img class="partners__image" src="img/content/products/household.jpg"
               alt="Комплект посуды и товаров для ухода за домом" width="640" height="959">
           </picture>
-          <h3 class="products_card-title">Товары для дома</h3>
+          <h3 class="products__card-title">Товары для дома</h3>
         </div>
       </div>
     </div>
@@ -706,12 +722,14 @@
 
       <div class="about__content">
         <div class="about__left">
-          <div class="about__image-border">
-            <picture>
-              <source type="image/webp" srcset="img/content/about/customer-care.webp">
-              <img class="about__image" src="img/content/about/customer-care.jpg"
-                alt="Женщина работает за ноутбуком и общается с клиентом по мобильной связи" width="920" height="600">
-            </picture>
+          <div class="about__photo-holder">
+            <div class="about__image-border">
+              <picture>
+                <source type="image/webp" srcset="img/content/about/customer-care.webp">
+                <img class="about__image" src="img/content/about/customer-care.jpg"
+                  alt="Женщина работает за ноутбуком и общается с клиентом по мобильной связи" width="920" height="600">
+              </picture>
+            </div>
           </div>
         </div>
 
@@ -719,13 +737,13 @@
           <ol class="about__list">
             <li>Гарантия целостности продуктов, сырья и товаров</li>
             <li>Соблюдение сроков доставки</li>
-            <li>На рынке более 4 лет</li>
+            <li>На рынке более 5 лет</li>
             <li>Решение непредвиденных ситуаций, дорожных препятствий, задержек на таможне</li>
           </ol>
         </div>
       </div>
 
-      <div class="about__content">
+      <div class="about__content about__content--reverse">
         <div class="about__left">
           <ol class="about__list">
             <li>Выработанный алгоритм работы с клиентами</li>
@@ -736,24 +754,28 @@
         </div>
 
         <div class="about__right">
-          <div class="about__image-border">
-            <picture>
-              <source type="image/webp" srcset="img/content/about/reliability.webp">
-              <img class="about__image" src="img/content/about/reliability.jpg"
-                alt="Мужщина вносит данные о грузе в компьютер на большом складе" width="920" height="600">
-            </picture>
+          <div class="about__photo-holder">
+            <div class="about__image-border">
+              <picture>
+                <source type="image/webp" srcset="img/content/about/reliability.webp">
+                <img class="about__image" src="img/content/about/reliability.jpg"
+                  alt="Мужщина вносит данные о грузе в компьютер на большом складе" width="920" height="600">
+              </picture>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="about__content">
         <div class="about__left">
-          <div class="about__image-border">
-            <picture>
-              <source type="image/webp" srcset="img/content/about/warehouse.webp">
-              <img class="about__image" src="img/content/about/warehouse.jpg" alt="Полки з грузом на большом складе"
-                width="920" height="600">
-            </picture>
+          <div class="about__photo-holder">
+            <div class="about__image-border">
+              <picture>
+                <source type="image/webp" srcset="img/content/about/warehouse.webp">
+                <img class="about__image" src="img/content/about/warehouse.jpg" alt="Полки з грузом на большом складе"
+                  width="920" height="600">
+              </picture>
+            </div>
           </div>
         </div>
 
@@ -784,7 +806,6 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <h3 class="timeline-title">Расчет стоимости</h3>
-            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.</p>
           </div>
         </li>
         <li class="timeline-item">
@@ -792,7 +813,6 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <h3 class="timeline-title">Заключение договора</h3>
-            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.</p>
           </div>
         </li>
         <li class="timeline-item">
@@ -800,7 +820,6 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <h3 class="timeline-title">Забор груза</h3>
-            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.</p>
           </div>
         </li>
         <li class="timeline-item">
@@ -808,7 +827,6 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <h3 class="timeline-title">Таможное оформление</h3>
-            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.</p>
           </div>
         </li>
         <li class="timeline-item">
@@ -816,7 +834,6 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <h3 class="timeline-title">Доставка</h3>
-            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.</p>
           </div>
         </li>
         <li class="timeline-item">
@@ -824,7 +841,6 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <h3 class="timeline-title">Получение товара</h3>
-            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.</p>
           </div>
         </li>
       </ul>
@@ -962,7 +978,7 @@
         </li>
         <li class="card card--one">
           <h3 class="card__title">Менг Фань</h3>
-          <b class="card__role">Представитель в ГЖ</b>
+          <b class="card__role">Представитель в <br>Гуанчжоу</b>
           <img class="card__image" src="./img/team/person4.jpg" alt="Менг Фань" width="600" height="600">
         </li>
         <li class="card card--one">
@@ -976,7 +992,7 @@
   </section>
 
   <!-- Map section -->
-  <section class=" map" id="map">
+  <section class="map" id="map">
     <h2 class="visually-hidden">Как нас найти на карте</h2>
     <div class="map__card-container">
       <div class="map__card">
@@ -1090,6 +1106,41 @@
       </div>
     </div>
   </footer>
+
+  <!-- Popup section -->
+  <div class="modal__container">
+    <div class="modal__overlay modal__overlay--hidden"></div>
+    <div class="modal modal--hidden">
+      <button type="button" class="modal__close" title="Закрыть" aria-label="Закрыть контактную форму">
+        <svg class="modal__close--svg" width="20" height="20" focusable="false">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <form class="modal__form">
+        <div class="modal__inner">
+          <div class="modal__form-item">
+            <label for="modal-name" class="modal__form-label">Имя</label>
+            <input id="modal-name" name="modal-name" type="text" placeholder="Иван Петрович"
+              class="modal__form-input input" required>
+          </div>
+          <div class="modal__form-item">
+            <label for="modal-phone" class="modal__form-label">Телефон</label>
+            <input id="modal-phone" name="modal-phone" type="tel" placeholder="+7 (000) 000-00-00"
+              class="modal__form-input input" required
+              pattern="^(\+7|7|8)?[\s\-]?\(?[0123456789][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$">
+          </div>
+          <div class="modal__form-item modal__form-item--full">
+            <label for="modal-text" class="modal__form-label">Комментарий (по желанию)</label>
+            <textarea id="modal-text" name="modal-text" placeholder="Хочу узнать..."
+              class="modal__form-input modal__form-input--textarea textarea"></textarea>
+          </div>
+          <div class="modal__form-item modal__form-item--submit">
+            <button class="button modal__form-submit" type="submit">Отправить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <script src="js/bundle.min.js"></script>
 </body>
