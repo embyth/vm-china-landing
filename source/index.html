@@ -33,7 +33,7 @@
     <div class="container">
       <nav class="site-nav">
         <div class="site-nav__logo-wrapper">
-          <a href="/" class="site-nav__logo-link" aria-hidden="true">
+          <a href="/" class="site-nav__logo-link" aria-label="Главная">
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo-big.svg" type="image/svg+xml">
               <source media="(max-width: 767px)" srcset="img/logo-small.svg" type="image/svg+xml">
@@ -109,7 +109,7 @@
           </div>
         </div>
         <div class="hero--static">
-          <img src="img/port.svg" alt="Грузовой порт для отправки контейнеров морем">
+          <img src="img/port.svg" alt="Грузовой порт для отправки контейнеров морем" width="320" height="213">
         </div>
       </div>
     </div>
@@ -369,7 +369,11 @@
                 помощь в доставке нашего груза.&nbsp;<button class="testimonials__source" type="button"
                   data-src="0">[источник]</button></p>
               <footer class="destimonials__footer">
-                <img src="./img/users/elena.jpg" alt="Елена" class="testimonials__avatar" width="50" height="50">
+                <picture>
+                  <source type="image/webp" srcset="./img/content/users/elena.webp">
+                  <img src="./img/content/users/elena.jpg" alt="Елена" class="testimonials__avatar" width="50"
+                    height="50">
+                </picture>
                 <h3 class="testimonials__name">Елена</h3>
               </footer>
             </article>
@@ -380,7 +384,11 @@
                 Доставили прям до подъезда, что очень приятно удивило.&nbsp;<button class="testimonials__source"
                   type="button" data-src="1">[источник]</button></p>
               <footer class="destimonials__footer">
-                <img src="./img/users/roman.jpg" alt="Роман" class="testimonials__avatar">
+                <picture>
+                  <source type="image/webp" srcset="./img/content/users/roman.webp">
+                  <img src="./img/content/users/roman.jpg" alt="Роман" class="testimonials__avatar" width="50"
+                    height="50">
+                </picture>
                 <h3 class="testimonials__name">Роман</h3>
               </footer>
             </article>
@@ -391,7 +399,11 @@
                 отличном состоянии. Доставили прям домой. Упаковали на совесть, спасибо. Буду обращаться к вам
                 ещё.&nbsp;<button class="testimonials__source" type="button" data-src="2">[источник]</button></p>
               <footer class="destimonials__footer">
-                <img src="./img/users/alina.jpg" alt="Алина" class="testimonials__avatar">
+                <picture>
+                  <source type="image/webp" srcset="./img/content/users/alina.webp">
+                  <img src="./img/content/users/alina.jpg" alt="Алина" class="testimonials__avatar" width="50"
+                    height="50">
+                </picture>
                 <h3 class="testimonials__name">Алина</h3>
               </footer>
             </article>
@@ -401,7 +413,11 @@
               <p class="testimonials__text">Очень качественно сделали! Приятно иметь с вами дело!&nbsp;<button
                   class="testimonials__source" type="button" data-src="3">[источник]</button></p>
               <footer class="destimonials__footer">
-                <img src="./img/users/kirill.jpg" alt="Кирилл" class="testimonials__avatar">
+                <picture>
+                  <source type="image/webp" srcset="./img/content/users/kirill.webp">
+                  <img src="./img/content/users/kirill.jpg" alt="Кирилл" class="testimonials__avatar" width="50"
+                    height="50">
+                </picture>
                 <h3 class="testimonials__name">Кирилл</h3>
               </footer>
             </article>
@@ -414,7 +430,11 @@
                   data-src="4">[источник]</button>
               </p>
               <footer class="destimonials__footer">
-                <img src="./img/users/dmitriy.jpg" alt="Дмитрий" class="testimonials__avatar">
+                <picture>
+                  <source type="image/webp" srcset="./img/content/users/dmitriy.webp">
+                  <img src="./img/content/users/dmitriy.jpg" alt="Дмитрий" class="testimonials__avatar" width="50"
+                    height="50">
+                </picture>
                 <h3 class="testimonials__name">Дмитрий</h3>
               </footer>
             </article>
@@ -425,7 +445,11 @@
                   class="testimonials__source" type="button" data-src="5">[источник]</button>
               </p>
               <footer class="destimonials__footer">
-                <img src="./img/users/vadim.jpg" alt="Вадим" class="testimonials__avatar">
+                <picture>
+                  <source type="image/webp" srcset="./img/content/users/roman.webp">
+                  <img src="./img/content/users/roman.jpg" alt="Вадим" class="testimonials__avatar" width="50"
+                    height="50">
+                </picture>
                 <h3 class="testimonials__name">Вадим</h3>
               </footer>
             </article>
@@ -650,7 +674,7 @@
           <picture>
             <source type="image/webp" srcset="img/content/products/car-parts.webp">
             <img class="partners__image" src="img/content/products/car-parts.png"
-              alt="Новые автозапчасти разложены на красивом фоне" width="920" height="600">
+              alt="Новые автозапчасти разложены на красивом фоне" width="920" height="600" loading="lazy">
           </picture>
           <h3 class="products__card-title">
             <span class="products__card-title--mobile">Автозапчасти</span>
@@ -661,7 +685,7 @@
           <picture>
             <source type="image/webp" srcset="img/content/products/clothings.webp">
             <img class="partners__image" src="img/content/products/clothings.jpg" alt="Сложенная одежда на полке"
-              width="1920" height="1280">
+              width="1920" height="1280" loading="lazy">
           </picture>
           <h3 class="products__card-title">Одежда</h3>
         </div>
@@ -669,7 +693,7 @@
           <picture>
             <source type="image/webp" srcset="img/content/products/pc-supplies.webp">
             <img class="partners__image" src="img/content/products/pc-supplies.jpg" alt="Микросхемы внутри компьютера"
-              width="1680" height="1152">
+              width="1680" height="1152" loading="lazy">
           </picture>
           <h3 class="products__card-title">
             <span class="products__card-title--mobile">Компьютерные аксессуары</span>
@@ -680,7 +704,7 @@
           <picture>
             <source type="image/webp" srcset="img/content/products/cigarettes.webp">
             <img class="partners__image" src="img/content/products/cigarettes.jpg" alt="Линейка электронных сиграет"
-              width="1920" height="1280">
+              width="1920" height="1280" loading="lazy">
           </picture>
           <h3 class="products__card-title">
             <span class="products__card-title--mobile">Электронные сигареты</span>
@@ -691,7 +715,7 @@
           <picture>
             <source type="image/webp" srcset="img/content/products/household.webp">
             <img class="partners__image" src="img/content/products/household.jpg"
-              alt="Комплект посуды и товаров для ухода за домом" width="640" height="959">
+              alt="Комплект посуды и товаров для ухода за домом" width="640" height="959" loading="lazy">
           </picture>
           <h3 class="products__card-title">Товары для дома</h3>
         </div>
@@ -727,7 +751,8 @@
               <picture>
                 <source type="image/webp" srcset="img/content/about/customer-care.webp">
                 <img class="about__image" src="img/content/about/customer-care.jpg"
-                  alt="Женщина работает за ноутбуком и общается с клиентом по мобильной связи" width="920" height="600">
+                  alt="Женщина работает за ноутбуком и общается с клиентом по мобильной связи" width="920" height="600"
+                  loading="lazy">
               </picture>
             </div>
           </div>
@@ -759,7 +784,8 @@
               <picture>
                 <source type="image/webp" srcset="img/content/about/reliability.webp">
                 <img class="about__image" src="img/content/about/reliability.jpg"
-                  alt="Мужщина вносит данные о грузе в компьютер на большом складе" width="920" height="600">
+                  alt="Мужщина вносит данные о грузе в компьютер на большом складе" width="920" height="600"
+                  loading="lazy">
               </picture>
             </div>
           </div>
@@ -773,7 +799,7 @@
               <picture>
                 <source type="image/webp" srcset="img/content/about/warehouse.webp">
                 <img class="about__image" src="img/content/about/warehouse.jpg" alt="Полки з грузом на большом складе"
-                  width="920" height="600">
+                  width="920" height="600" loading="lazy">
               </picture>
             </div>
           </div>
@@ -862,7 +888,7 @@
                 <source media="(min-width: 768px)" srcset="img/content/partners/remax.png">
                 <source type="image/webp" srcset="img/content/partners/remax.webp">
                 <img class="partners__image" src="img/content/partners/remax.png" alt="Логотип компании Remax"
-                  width="150" height="32">
+                  width="150" height="32" loading="lazy">
               </picture>
             </a>
           </li>
@@ -875,7 +901,7 @@
                 <source media="(min-width: 768px)" srcset="img/content/partners/airwheel.png">
                 <source type="image/webp" srcset="img/content/partners/airwheel.webp">
                 <img class="partners__image" src="img/content/partners/airwheel.png" alt="Логотип компании Airwheel"
-                  width="200" height="60">
+                  width="200" height="60" loading="lazy">
               </picture>
             </a>
           </li>
@@ -888,7 +914,7 @@
                 <source media="(min-width: 768px)" srcset="img/content/partners/moxom.png">
                 <source type="image/webp" srcset="img/content/partners/moxom.webp">
                 <img class="partners__image" src="img/content/partners/moxom.png" alt="Логотип компании Moxom"
-                  width="134" height="30">
+                  width="134" height="30" loading="lazy">
               </picture>
             </a>
           </li>
@@ -901,7 +927,7 @@
                 <source media="(min-width: 768px)" srcset="img/content/partners/sotovik.png">
                 <source type="image/webp" srcset="img/content/partners/sotovik.webp">
                 <img class="partners__image partners__image--sotovik" src="img/content/partners/sotovik.png"
-                  alt="Логотип компании Сотовик" width="274" height="80">
+                  alt="Логотип компании Сотовик" width="274" height="80" loading="lazy">
               </picture>
             </a>
           </li>
@@ -914,14 +940,14 @@
                 <source media="(min-width: 768px)" srcset="img/content/partners/hoco.png">
                 <source type="image/webp" srcset="img/content/partners/hoco.webp">
                 <img class="partners__image" src="img/content/partners/hoco.png" alt="Логотип компании Hoco" width="200"
-                  height="60">
+                  height="60" loading="lazy">
               </picture>
             </a>
           </li>
           <li class="partners__item swiper-slide">
             <a class="partners__link" href="https://anystayanyday.com/" target="_blank" rel="noreferrer">
               <img class="partners__image partners__image--asad" src="img/content/partners/asad.svg"
-                alt="Логотип компании Any Stay Any Day" width="112" height="30">
+                alt="Логотип компании Any Stay Any Day" width="112" height="30" loading="lazy">
             </a>
           </li>
         </ul>
@@ -964,27 +990,47 @@
         <li class="card card--one">
           <h3 class="card__title">Мао Юэ</h3>
           <b class="card__role">Менеджер по закупкам <br>Гуанчжоу</b>
-          <img class="card__image" src="./img/team/person1.jpg" alt="Мао Юэ" width="600" height="600">
+          <picture>
+            <source type="image/webp" srcset="./img/content/team/person1.webp">
+            <img class="card__image" src="./img/content/team/person1.jpg" alt="Мао Юэ" width="600" height="600"
+              loading="lazy">
+          </picture>
         </li>
         <li class="card card--one">
           <h3 class="card__title">Анатолий</h3>
           <b class="card__role">Представитель в Минске</b>
-          <img class="card__image" src="./img/team/person2.jpg" alt="Анатолий" width="600" height="600">
+          <picture>
+            <source type="image/webp" srcset="./img/content/team/person2.webp">
+            <img class="card__image" src="./img/content/team/person2.jpg" alt="Анатолий" width="600" height="600"
+              loading="lazy">
+          </picture>
         </li>
         <li class="card card--one">
           <h3 class="card__title">Анастасия</h3>
           <b class="card__role">Главный менеджер</b>
-          <img class="card__image" src="./img/team/person3.jpg" alt="Анастасия" width="600" height="600">
+          <picture>
+            <source type="image/webp" srcset="./img/content/team/person3.webp">
+            <img class="card__image" src="./img/content/team/person3.jpg" alt="Анастасия" width="600" height="600"
+              loading="lazy">
+          </picture>
         </li>
         <li class="card card--one">
           <h3 class="card__title">Менг Фань</h3>
           <b class="card__role">Представитель в <br>Гуанчжоу</b>
-          <img class="card__image" src="./img/team/person4.jpg" alt="Менг Фань" width="600" height="600">
+          <picture>
+            <source type="image/webp" srcset="./img/content/team/person4.webp">
+            <img class="card__image" src="./img/content/team/person4.jpg" alt="Менг Фань" width="600" height="600"
+              loading="lazy">
+          </picture>
         </li>
         <li class="card card--one">
           <h3 class="card__title">Владимир</h3>
           <b class="card__role">Руководитель по <br>продвижению</b>
-          <img class="card__image" src="./img/team/person5.jpg" alt="Владимир" width="600" height="600">
+          <picture>
+            <source type="image/webp" srcset="./img/content/team/person5.webp">
+            <img class="card__image" src="./img/content/team/person5.jpg" alt="Владимир" width="600" height="600"
+              loading="lazy">
+          </picture>
         </li>
         <li class="card card--one"></li>
       </ul>
@@ -1047,7 +1093,8 @@
         <source type="image/webp" media="(min-width: 768px)" srcset="img/content/bg-map-tablet.webp">
         <source media="(min-width: 768px)" srcset="img/content/bg-map-tablet.jpg">
         <source type="image/webp" srcset="img/content/bg-map-mobile.webp">
-        <img class="map__image" src="img/content/bg-map-mobile.jpg" alt="Карта с месторасположением нашего офиса">
+        <img class="map__image" src="img/content/bg-map-mobile.jpg" alt="Карта с месторасположением нашего офиса"
+          loading="lazy" width="1902" height="499">
       </picture>
     </div>
   </section>
